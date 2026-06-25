@@ -1,0 +1,207 @@
+{
+    "combo_1": {
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 3",
+        "damage": "68",
+        "range": "hhhLmmlhhmm",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        }
+    },
+    "combo_2": {
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 4",
+        "damage": "108",
+        "range": "hhhLmmlhhmL",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        }
+    },
+    "combo_3": {
+        "notation": "f, f, 2, 1, 2, 2, 3, 4, 4, 1, 2, 1",
+        "damage": "93",
+        "range": "hhhhmmLhmm",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        }
+    },
+    "combo_4": {
+        "notation": "f, f+2, 1, 2, 2, 3, 4, 4, 3, 2, 1",
+        "damage": "110",
+        "range": "hhhhmmLLm!",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        }
+    },
+    "combo_5": {
+        "notation": "3, 2, 4, 3, 1+4, 2, 2, 1, 2",
+        "damage": "121",
+        "range": "hhmhlhhmmm",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        }
+    },
+    "combo_6": {
+        "notation": "f, f, 2, 1, 4, 4, 2, 4, 3, 2, 1",
+        "damage": "112",
+        "range": "hhmmlmLm!",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        }
+    },
+    "combo_7": {
+        "notation": "3, 2, 4, 3, 1+4, 2, 1, 3",
+        "damage": "109",
+        "range": "hhmhlhhmm",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        }
+    },
+    "combo_8": {
+        "notation": "3, 2, 4, 3, 1+4, 2, 1, 4",
+        "damage": "108",
+        "range": "hhmhlhhmL",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        }
+    },
+    "combo_9": {
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, d+3+4",
+        "damage": "108",
+        "range": "hhhlmmlhhlh",
+        "parsed": {
+            "directions": [
+                "BACK",
+                "DOWN"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        }
+    }
+}

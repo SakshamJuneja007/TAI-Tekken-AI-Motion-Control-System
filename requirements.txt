@@ -1,0 +1,23 @@
+# TAI — Motion-to-Intent Combat Engine
+# Install: pip install -r requirements.txt
+
+# Vision
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+
+# UI
+streamlit>=1.35.0
+streamlit-webrtc>=0.47.0
+av>=10.0.0
+
+# Input (choose one or both)
+pynput>=1.7.6
+vgamepad>=0.1.0   # Windows only
+
+# ML (Phase 2)
+numpy>=1.24.0
+# tensorflow>=2.14.0   # uncomment for Phase 2
+# torch>=2.0.0         # uncomment for Phase 2
+
+# Utils
+python-dotenv>=1.0.0

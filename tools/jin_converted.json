@@ -1,0 +1,69 @@
+{
+    "Demon's Paw": {
+        "name": "Demon's Paw",
+        "notation": "f,f+2",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "damage": "27",
+        "range": "Mid",
+        "intent": "PRESSURE",
+        "priority": 1,
+        "cooldown": 0.5,
+        "tags": [
+            "pressure",
+            "safe"
+        ]
+    },
+    "Twin Pistons": {
+        "name": "Twin Pistons",
+        "notation": "d/f+1,2",
+        "parsed": {
+            "directions": [
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "damage": "10,16",
+        "range": "Mid",
+        "intent": "LAUNCHER",
+        "priority": 1,
+        "cooldown": 0.5,
+        "tags": [
+            "launcher"
+        ]
+    },
+    "Low Jab": {
+        "name": "Low Jab",
+        "notation": "d+1",
+        "parsed": {
+            "directions": [
+                "DOWN"
+            ],
+            "buttons": [
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        },
+        "damage": "5",
+        "range": "Low",
+        "intent": "LOW_ATTACK",
+        "priority": 1,
+        "cooldown": 0.5,
+        "tags": [
+            "low",
+            "fast"
+        ]
+    }
+}

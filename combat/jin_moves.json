@@ -1,0 +1,1382 @@
+{
+    "Double High Sweep": {
+        "name": "Double High Sweep",
+        "notation": "1+3",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Over the Shoulder Reverse": {
+        "name": "Over the Shoulder Reverse",
+        "notation": "2+4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Stonehead": {
+        "name": "Stonehead",
+        "notation": "f,f+1+2",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Shoulder Flip": {
+        "name": "Shoulder Flip",
+        "notation": "1+3 or 2+4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": [
+                "3or2"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Over the Limit": {
+        "name": "Over the Limit",
+        "notation": "1+3 or 2+4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": [
+                "3or2"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Chicken Butcher": {
+        "name": "Chicken Butcher",
+        "notation": "1+3 or 2+4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": [
+                "3or2"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Wrist Chuck Slam": {
+        "name": "Wrist Chuck Slam",
+        "notation": "d/f+2+3",
+        "parsed": {
+            "directions": [
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Complicated Wire": {
+        "name": "Complicated Wire",
+        "notation": "qcb+1+3",
+        "parsed": {
+            "directions": [
+                "DOWN_BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Ultimate Tackle": {
+        "name": "Ultimate Tackle",
+        "notation": "d/b+1+2",
+        "parsed": {
+            "directions": [
+                "DOWN_BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Ultimate Punch": {
+        "name": "Ultimate Punch",
+        "notation": "During Tackle 2, 1, 2, 1, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "durigtackle2"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Cross Arm Lock": {
+        "name": "Cross Arm Lock",
+        "notation": "During Tackle 1+2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "durigtackle1"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Ultimate Punch to Cross Arm Lock": {
+        "name": "Ultimate Punch to Cross Arm Lock",
+        "notation": "During Tackle 2, 1, 2, 1+2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "durigtackle2"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Attack Reversal": {
+        "name": "Attack Reversal",
+        "notation": "b+1+3 or b+2+4",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": [
+                "3orb"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Throws"
+        ]
+    },
+    "Flash Punch Combo": {
+        "name": "Flash Punch Combo",
+        "notation": "1, 1, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Left Right Combo": {
+        "name": "Left Right Combo",
+        "notation": "1, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Demon Slayer": {
+        "name": "Demon Slayer",
+        "notation": "1, 2, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Shoot the Works": {
+        "name": "Shoot the Works",
+        "notation": "1, 2, 3, 4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Shoot the Works Upper": {
+        "name": "Shoot the Works Upper",
+        "notation": "1, 2, 3, f+4",
+        "parsed": {
+            "directions": [
+                "FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "One Two Knee": {
+        "name": "One Two Knee",
+        "notation": "1, 2, 4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Demon Backhand Spin": {
+        "name": "Demon Backhand Spin",
+        "notation": "2, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Back Spin Kick": {
+        "name": "Back Spin Kick",
+        "notation": "4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Demon Scissors": {
+        "name": "Demon Scissors",
+        "notation": "[4~3]",
+        "parsed": {
+            "directions": [],
+            "buttons": [],
+            "states": [
+                "43"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Three Ring Circus": {
+        "name": "Three Ring Circus",
+        "notation": "1+4, 2, 4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "3 Ring Circus Combo": {
+        "name": "3 Ring Circus Combo",
+        "notation": "1+4, 2, d+4",
+        "parsed": {
+            "directions": [
+                "DOWN"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "LOW_ATTACK",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Supercharger": {
+        "name": "Supercharger",
+        "notation": "1+2+3+4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "893P": {
+        "name": "893P",
+        "notation": "f+2",
+        "parsed": {
+            "directions": [
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Spinning High Kick": {
+        "name": "Spinning High Kick",
+        "notation": "f+3",
+        "parsed": {
+            "directions": [
+                "FORWARD"
+            ],
+            "buttons": [
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Knee Kick": {
+        "name": "Knee Kick",
+        "notation": "f+4",
+        "parsed": {
+            "directions": [
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Twin Lancer": {
+        "name": "Twin Lancer",
+        "notation": "d/f+1, 2",
+        "parsed": {
+            "directions": [
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Tsunami Kick": {
+        "name": "Tsunami Kick",
+        "notation": "WS+4, 4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": [
+                "WHILE_STANDING"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Double Lift Kick": {
+        "name": "Double Lift Kick",
+        "notation": "d+3+4",
+        "parsed": {
+            "directions": [
+                "DOWN"
+            ],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Uraken": {
+        "name": "Uraken",
+        "notation": "b+2",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Hell Scraper": {
+        "name": "Hell Scraper",
+        "notation": "b+2, 4, 2, 1, 2",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Force": {
+        "name": "Force",
+        "notation": "b+1+2",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Lightning Uppercut": {
+        "name": "Lightning Uppercut",
+        "notation": "b+1+4",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Lightning Screw Uppercut": {
+        "name": "Lightning Screw Uppercut",
+        "notation": "B+1+4",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Rising Sun": {
+        "name": "Rising Sun",
+        "notation": "u/f (or u)+4, 4",
+        "parsed": {
+            "directions": [
+                "UP_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "LOW_ATTACK",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Roundhouse to Triple Spin Kick": {
+        "name": "Roundhouse to Triple Spin Kick",
+        "notation": "u/f (or u)+4, 4, 4, 4",
+        "parsed": {
+            "directions": [
+                "UP_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "LOW_ATTACK",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "High Pounce": {
+        "name": "High Pounce",
+        "notation": "u/f (or u or u/b) +2+4",
+        "parsed": {
+            "directions": [
+                "UP_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Demon's Paw": {
+        "name": "Demon's Paw",
+        "notation": "f, f+2",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Heavy Body Blow": {
+        "name": "Heavy Body Blow",
+        "notation": "b, f+2",
+        "parsed": {
+            "directions": [
+                "BACK",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Laser Cannon": {
+        "name": "Laser Cannon",
+        "notation": "b, f+2, 1, 2",
+        "parsed": {
+            "directions": [
+                "BACK",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Laser Scraper": {
+        "name": "Laser Scraper",
+        "notation": "b, f+2, 1, d/f+2",
+        "parsed": {
+            "directions": [
+                "BACK",
+                "FORWARD",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Dragon Uppercut": {
+        "name": "Dragon Uppercut",
+        "notation": "f, N, d, d/f+1",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Dragon Uppercut to Middle Kick": {
+        "name": "Dragon Uppercut to Middle Kick",
+        "notation": "f, N, d, d/f+1, 3",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Dragon Uppercut to Spinning Low Kick": {
+        "name": "Dragon Uppercut to Spinning Low Kick",
+        "notation": "f, N, d, d/f+1, 4",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "LOW_ATTACK",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Rising Uppercut": {
+        "name": "Rising Uppercut",
+        "notation": "f, N, d, d/f+2",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Electric Wind Godfist": {
+        "name": "Electric Wind Godfist",
+        "notation": "f, N, d, d/f+2 (press at the same time)",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Spinning Demon": {
+        "name": "Spinning Demon",
+        "notation": "f, N, d, d/f+4, 4",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "DOWN",
+                "DOWN_FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "LOW_ATTACK",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Leaping Side Kick": {
+        "name": "Leaping Side Kick",
+        "notation": "f, f, f+3",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Twin Pistons": {
+        "name": "Twin Pistons",
+        "notation": "WS+1, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "WHILE_STANDING"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Uppercut": {
+        "name": "Uppercut",
+        "notation": "WS+2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "WHILE_STANDING"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "Tooth Fairy": {
+        "name": "Tooth Fairy",
+        "notation": "SS+ 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "RIGHT_PUNCH"
+            ],
+            "states": [
+                "SIDESTEP"
+            ]
+        },
+        "intent": "PRESSURE",
+        "priority": 1.0,
+        "cooldown": 0.5,
+        "type": "move",
+        "tags": [
+            "Attacks"
+        ]
+    },
+    "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 3": {
+        "name": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 3",
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 3",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 4": {
+        "name": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 4",
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, 1, 4",
+        "parsed": {
+            "directions": [
+                "BACK"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "f, f, 2, 1, 2, 2, 3, 4, 4, 1, 2, 1": {
+        "name": "f, f, 2, 1, 2, 2, 3, 4, 4, 1, 2, 1",
+        "notation": "f, f, 2, 1, 2, 2, 3, 4, 4, 1, 2, 1",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "f, f+2, 1, 2, 2, 3, 4, 4, 3, 2, 1": {
+        "name": "f, f+2, 1, 2, 2, 3, 4, 4, 3, 2, 1",
+        "notation": "f, f+2, 1, 2, 2, 3, 4, 4, 3, 2, 1",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "3, 2, 4, 3, 1+4, 2, 2, 1, 2": {
+        "name": "3, 2, 4, 3, 1+4, 2, 2, 1, 2",
+        "notation": "3, 2, 4, 3, 1+4, 2, 2, 1, 2",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "f, f, 2, 1, 4, 4, 2, 4, 3, 2, 1": {
+        "name": "f, f, 2, 1, 4, 4, 2, 4, 3, 2, 1",
+        "notation": "f, f, 2, 1, 4, 4, 2, 4, 3, 2, 1",
+        "parsed": {
+            "directions": [
+                "FORWARD",
+                "FORWARD"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "3, 2, 4, 3, 1+4, 2, 1, 3": {
+        "name": "3, 2, 4, 3, 1+4, 2, 1, 3",
+        "notation": "3, 2, 4, 3, 1+4, 2, 1, 3",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "LEFT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "3, 2, 4, 3, 1+4, 2, 1, 4": {
+        "name": "3, 2, 4, 3, 1+4, 2, 1, 4",
+        "notation": "3, 2, 4, 3, 1+4, 2, 1, 4",
+        "parsed": {
+            "directions": [],
+            "buttons": [
+                "LEFT_KICK",
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "LEFT_KICK",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    },
+    "b+2, 4, 4, 4, 4, 2, 1+4, 2, d+3+4": {
+        "name": "b+2, 4, 4, 4, 4, 2, 1+4, 2, d+3+4",
+        "notation": "b+2, 4, 4, 4, 4, 2, 1+4, 2, d+3+4",
+        "parsed": {
+            "directions": [
+                "BACK",
+                "DOWN"
+            ],
+            "buttons": [
+                "RIGHT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_PUNCH",
+                "RIGHT_KICK",
+                "RIGHT_PUNCH",
+                "LEFT_KICK",
+                "RIGHT_KICK"
+            ],
+            "states": []
+        },
+        "intent": "COMBO",
+        "priority": 0.2,
+        "cooldown": 5.0,
+        "type": "combo",
+        "tags": [
+            "10 Hit Combos"
+        ]
+    }
+}
