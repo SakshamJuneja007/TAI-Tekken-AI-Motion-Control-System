@@ -1,43 +1,59 @@
 # 🥊 TAI — Tekken AI Motion Intelligence Engine
 
-### Real-Time Human Motion → Intent Understanding → Combat Execution
+### Real-Time Human Motion → Intent Prediction → Combat Execution
 
-TAI (Tekken AI) is an experimental AI system that translates human body movements into intelligent in-game actions using **Computer Vision**, **Machine Learning**, **Temporal Reasoning**, and **Combat Decision-Making**.
+TAI is an experimental AI system that converts human body movements into intelligent Tekken actions using a multi-stage perception and reasoning pipeline.
 
-Unlike traditional gesture-control systems that directly map gestures to keyboard inputs, TAI uses a layered architecture that attempts to understand the player's **intent** before selecting and executing a combat action.
+Instead of directly mapping gestures to keyboard inputs, TAI attempts to understand **player intent** before selecting and executing a combat move.
+
+Built as an exploration of:
+
+- Computer Vision
+- Human Motion Analysis
+- Temporal Sequence Modeling
+- Intent Recognition
+- Decision Systems
+- Real-Time AI Pipelines
 
 ---
 
-## 🎯 Project Goal
+## 🚀 What Makes TAI Different?
 
-Most gesture-controlled game systems follow a simple approach:
+Most gesture-controlled systems work like this:
 
 ```text
-Punch → Key 1
-Kick → Key 2
+Punch  → Key 1
+Kick   → Key 2
+Crouch → Key Down
 ```
 
-TAI instead follows:
+TAI introduces an additional reasoning layer:
 
 ```text
 Human Motion
-    ↓
-Action Detection
-    ↓
+      ↓
+Atomic Actions
+      ↓
+Temporal Memory
+      ↓
 Intent Prediction
-    ↓
+      ↓
 Combat Reasoning
-    ↓
+      ↓
 Move Selection
-    ↓
+      ↓
 Game Execution
 ```
 
-This enables the system to reason about **what the player is trying to do**, rather than reacting to individual gestures alone.
+Instead of reacting to individual gestures, the system attempts to infer:
+
+> "What is the player trying to do?"
+
+and then chooses an appropriate combat action.
 
 ---
 
-## 🏗️ System Architecture
+# 🏗️ System Architecture
 
 ```text
 ┌───────────────────────┐
@@ -70,20 +86,17 @@ This enables the system to reason about **what the player is trying to do**, rat
            │
            ▼
 ┌───────────────────────┐
-│ Intent Predictor      │
-│ LSTM Neural Network   │
+│ LSTM Intent Predictor │
 └──────────┬────────────┘
            │
            ▼
 ┌───────────────────────┐
 │ Combat Resolver       │
-│ Decision Layer        │
 └──────────┬────────────┘
            │
            ▼
 ┌───────────────────────┐
 │ Move Brain            │
-│ Move Selection Engine │
 └──────────┬────────────┘
            │
            ▼
@@ -95,99 +108,216 @@ This enables the system to reason about **what the player is trying to do**, rat
 
 ---
 
-## 🚀 Features
+# ⚙️ Core Components
 
-### 👁️ Computer Vision
+## 👁️ Perception Layer
 
-- Real-time pose tracking using MediaPipe
-- Landmark extraction and processing
-- Motion velocity estimation
-- Directional movement detection
+Real-time motion capture using:
 
-### 🎮 Action Recognition
+- OpenCV
+- MediaPipe Pose
+- Landmark Tracking
+- Velocity Estimation
 
-- Punch detection
-- Kick detection
-- Forward movement detection
-- Backward movement detection
-- Crouch detection
-- Composite action analysis
+Detected actions include:
 
-### 🧠 Temporal Intelligence
-
-- Action buffering
-- Temporal sequence analysis
-- Context-aware interpretation
-- Intent prediction from action history
-
-### 🤖 Machine Learning
-
-- LSTM-based intent classification
-- Sequence modelling
-- Synthetic training data generation
-- Multi-class combat intent prediction
-
-**Supported Intents**
-
-- PRESSURE
-- AGGRESSIVE
-- LOW_ATTACK
-- LAUNCHER
-- MOVEMENT
-- DEFENSIVE
-- IDLE
-
-### ⚔️ Combat Intelligence
-
-- Intent-driven move selection
-- Combat resolver layer
-- Move categorization
-- Dynamic move execution
-
-### ⌨️ Game Integration
-
-- Keyboard emulation
-- Automated move execution
-- Real-time gameplay interaction
+- Left Punch
+- Right Punch
+- Kicks
+- Forward Movement
+- Backward Movement
+- Crouch
+- Composite Movements
 
 ---
 
-## 📊 Training Pipeline
+## 🧠 Temporal Intelligence Layer
 
-A major challenge was the absence of publicly available datasets that map human body movements directly to Tekken actions.
+Unlike frame-by-frame gesture systems, TAI maintains short-term memory.
 
-To overcome this limitation:
+Features:
 
-1. Tekken move data was extracted and structured.
-2. Combat moves were converted into motion-oriented labels.
-3. Synthetic action sequences were generated programmatically.
-4. An LSTM model was trained on the generated dataset.
-5. The trained model predicts player intent from detected action sequences.
+- Action Buffer
+- Temporal Context
+- Sequence Analysis
+- Event History Tracking
 
-This allowed rapid experimentation without requiring expensive motion-capture datasets.
+Example:
+
+```text
+Punch
+↓
+Punch
+↓
+Forward
+↓
+Kick
+
+≠
+
+Single Punch Detection
+```
+
+The order of actions matters.
 
 ---
 
-## 🛠️ Tech Stack
+## 🤖 Intent Prediction Layer
 
-| Category | Technology |
-|-----------|-----------|
-| Language | Python |
-| Computer Vision | OpenCV, MediaPipe |
-| Machine Learning | TensorFlow, Keras |
-| Numerical Computing | NumPy |
-| Input Automation | pynput |
-| UI / Visualization | OpenCV Rendering |
+An LSTM neural network analyzes recent action sequences and predicts high-level combat intent.
 
----
+Supported intents:
 
-## 📈 Example Pipeline Output
+```text
+PRESSURE
+AGGRESSIVE
+LOW_ATTACK
+LAUNCHER
+MOVEMENT
+DEFENSIVE
+IDLE
+```
+
+Example:
 
 ```text
 Detected Actions:
 [CROUCH, LEFT_PUNCH]
 
+↓
+
 Predicted Intent:
+LOW_ATTACK
+```
+
+---
+
+## ⚔️ Combat Intelligence Layer
+
+Once an intent is predicted:
+
+1. Combat Resolver validates intent confidence
+2. Move Brain searches suitable moves
+3. Candidate moves are filtered
+4. A move is selected for execution
+
+Example:
+
+```text
+Intent:
+LOW_ATTACK
+
+↓
+
+Selected Move:
+Dragon Uppercut to Spinning Low Kick
+```
+
+---
+
+## ⌨️ Execution Layer
+
+The selected move is converted into game inputs and executed through keyboard emulation.
+
+Example:
+
+```text
+Move:
+Dragon Uppercut to Spinning Low Kick
+
+↓
+
+Inputs:
+Forward → Down → Punch → Kick
+```
+
+---
+
+# 📊 Training Pipeline
+
+One of the biggest challenges was the lack of publicly available datasets linking human body motion directly to Tekken actions.
+
+To overcome this:
+
+### Step 1
+
+Extracted and structured Tekken move data.
+
+### Step 2
+
+Converted move notation into motion-oriented action labels.
+
+### Step 3
+
+Generated synthetic combat sequences.
+
+### Step 4
+
+Created a labeled intent dataset.
+
+### Step 5
+
+Trained an LSTM sequence model.
+
+This allowed rapid experimentation without requiring expensive motion-capture hardware or large-scale data collection.
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technology |
+|-----------|-----------|
+| Language | Python |
+| Computer Vision | OpenCV, MediaPipe |
+| Deep Learning | TensorFlow / Keras |
+| Numerical Computing | NumPy |
+| Input Automation | pynput |
+| Motion Processing | Custom Velocity Engine |
+| Sequence Modeling | LSTM |
+
+---
+
+# 📂 Project Structure
+
+```text
+vision/
+ ├── detector.py
+ ├── mediapipe_processor.py
+ └── velocity.py
+
+core/
+ ├── buffer.py
+ ├── models.py
+ └── notation.py
+
+intelligence/
+ ├── intents.py
+ ├── predictor.py
+ ├── move_brain.py
+ └── combat.py
+
+combat/
+ ├── executor.py
+ ├── resolver.py
+ └── jin_moves.json
+
+ml/
+ ├── dataset.py
+ └── intent_model.py
+```
+
+---
+
+# 📈 Example Runtime Output
+
+```text
+FPS: 30
+
+Detected Actions:
+CROUCH
+LEFT_PUNCH
+
+Intent:
 LOW_ATTACK (97.9%)
 
 Selected Move:
@@ -199,82 +329,68 @@ Forward → Down → Punch → Kick
 
 ---
 
-## ⚠️ Current Challenges
+# ⚠️ Current Limitations
 
-The project is currently in the research and prototyping phase.
+TAI is currently a research prototype.
 
-Known limitations include:
+Known issues:
 
-- Webcam quality affects tracking accuracy
-- Continuous state spam (e.g., repeated crouch detection)
-- Limited diagonal input support
+- Webcam quality impacts tracking accuracy
+- Continuous state spam (repeated crouch events)
+- Limited diagonal input handling
 - Synthetic-to-real data gap
 - Standing-player assumption
-- No direct game-state awareness
-
-These challenges are part of ongoing development and experimentation.
+- No game-state awareness
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Roadmap
 
-### Short-Term
+## Near-Term
 
-- State-transition based action detection
-- Improved move diversity
-- Better action filtering
-- Diagonal input support
-- Real motion dataset collection
+- State transition detection
+- Better move diversity
+- Improved action filtering
+- Full diagonal input support
+- Real-world motion dataset collection
 
-### Mid-Term
+## Mid-Term
 
 - Transformer-based intent prediction
 - Combo planning engine
+- Context-aware combat logic
 - Reinforcement learning assisted move selection
-- Context-aware combat strategies
 
-### Long-Term
+## Long-Term
 
-- Full-body motion intelligence engine
-- Adaptive player modelling
 - Vision-based game-state understanding
+- Adaptive player modeling
+- Full-body motion intelligence
 - Autonomous combat agent
 
 ---
 
-## 🎓 Learning Outcomes
+# 🎓 Key Engineering Concepts Demonstrated
 
-This project explores how multiple AI domains can be combined into a single real-time system:
+This project combines multiple AI disciplines into a single real-time system:
 
 - Computer Vision
-- Human Motion Analysis
-- Sequence Modelling
+- Motion Analysis
+- Deep Learning
+- Sequence Modeling
 - Intent Recognition
 - Decision Systems
-- Intelligent Agents
-- Real-Time AI Pipelines
+- Human-Computer Interaction
+- Real-Time Inference Pipelines
 
 ---
 
-## 💡 Why This Project Exists
-
-TAI was built to explore how human motion can be transformed into higher-level intent and converted into intelligent game actions.
-
-Rather than creating a simple gesture-to-key mapper, the objective was to build a complete:
-
-**Perception → Reasoning → Decision → Execution**
-
-pipeline capable of operating in real time.
-
----
-
-
-## Installation
+# 💻 Installation
 
 ```bash
-git clone https://github.com/SakshamJuneja007/TAI.git
+git clone https://github.com/SakshamJuneja007/TAI-Tekken-AI-Motion-Control-System.git
 
-cd TAI
+cd TAI-Tekken-AI-Motion-Control-System
 
 pip install -r requirements.txt
 ```
@@ -284,28 +400,17 @@ Run:
 ```bash
 python run_tai.py
 ```
-## Why This Project Is Interesting
 
-Most gesture-control systems directly map gestures to keyboard inputs.
+---
 
-TAI instead uses a layered AI pipeline:
+# 👨‍💻 Author
 
-Motion → Actions → Intent → Combat Reasoning → Move Selection → Execution
-
-This architecture separates perception, reasoning, and execution, making the system extensible to future applications such as:
-
-- Sports coaching
-- Physical therapy
-- Sign language recognition
-- Human-computer interaction
-
-## 👨‍💻 Author
-
-**Saksham Juneja**
+## Saksham Juneja
 
 B.Tech — Artificial Intelligence & Machine Learning
 
-**Areas of Interest**
+### Interests
+
 - Computer Vision
 - Machine Learning
 - Intelligent Agents
@@ -314,4 +419,8 @@ B.Tech — Artificial Intelligence & Machine Learning
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star.
+## ⭐ Support
+
+If you found this project interesting, consider giving it a star.
+
+It helps others discover the project and supports future development.
