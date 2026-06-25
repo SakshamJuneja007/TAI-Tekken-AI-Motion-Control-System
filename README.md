@@ -268,6 +268,37 @@ pipeline capable of operating in real time.
 
 ---
 
+
+## Installation
+
+```bash
+git clone https://github.com/SakshamJuneja007/TAI.git
+
+cd TAI
+
+pip install -r requirements.txt
+```
+
+Run:
+
+```bash
+python run_tai.py
+```
+## Why This Project Is Interesting
+
+Most gesture-control systems directly map gestures to keyboard inputs.
+
+TAI instead uses a layered AI pipeline:
+
+Motion → Actions → Intent → Combat Reasoning → Move Selection → Execution
+
+This architecture separates perception, reasoning, and execution, making the system extensible to future applications such as:
+
+- Sports coaching
+- Physical therapy
+- Sign language recognition
+- Human-computer interaction
+
 ## 👨‍💻 Author
 
 **Saksham Juneja**
